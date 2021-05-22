@@ -51,7 +51,7 @@ $ brew install jsonnet
 Then, grab the mixin and its dependencies:
 
 ```
-$ git clone https://github.com/kubernetes-monitoring/kubernetes-mixin
+$ git clone https://github.com/cyclops8456/kubernetes-mixin
 $ cd kubernetes-mixin
 $ jb install
 ```
@@ -192,7 +192,7 @@ Then, install the kubernetes-mixin:
 
 ```
 $ jb init
-$ jb install github.com/kubernetes-monitoring/kubernetes-mixin
+$ jb install github.com/cyclops8456/kubernetes-mixin
 ```
 
 Generate the alerts, rules and dashboards:
