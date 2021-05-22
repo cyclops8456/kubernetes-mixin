@@ -29,7 +29,7 @@ tests:
       exp_annotations:
         summary: "PersistentVolume is filling up."
         description: 'The PersistentVolume claimed by somepvc in Namespace monitoring is only 1.562% free.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubepersistentvolumefillingup
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubepersistentvolumefillingup
 
 - interval: 1m
   input_series:
@@ -49,7 +49,7 @@ tests:
       exp_annotations:
         summary: "PersistentVolume is filling up."
         description: 'The PersistentVolume claimed by somepvc in Namespace monitoring is only 1.294% free.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubepersistentvolumefillingup
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubepersistentvolumefillingup
 
 - interval: 1m
   input_series:
@@ -69,7 +69,7 @@ tests:
       exp_annotations:
         summary: "PersistentVolume is filling up."
         description: 'Based on recent sampling, the PersistentVolume claimed by somepvc in Namespace monitoring is expected to fill up within four days. Currently 1.263% is available.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubepersistentvolumefillingup
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubepersistentvolumefillingup
     - exp_labels:
         job: kubelet
         namespace: monitoring
@@ -78,7 +78,7 @@ tests:
       exp_annotations:
         summary: "PersistentVolume is filling up."
         description: 'The PersistentVolume claimed by somepvc in Namespace monitoring is only 1.263% free.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubepersistentvolumefillingup
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubepersistentvolumefillingup
 
 - interval: 1m
   input_series:
@@ -108,7 +108,7 @@ tests:
       exp_annotations:
         summary: "Kubelet is running at capacity."
         description: "Kubelet 'minikube' is running at 100% of its Pod capacity."
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubelettoomanypods
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubelettoomanypods
 
 - interval: 1m
   input_series:
@@ -196,7 +196,7 @@ tests:
       exp_annotations:
         summary: "Kubelet Pod Lifecycle Event Generator is taking too long to relist."
         description: 'The Kubelet Pod Lifecycle Event Generator has a 99th percentile duration of 10 seconds on node minikube.'
-        runbook_url: 'https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletplegdurationhigh'
+        runbook_url: 'https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletplegdurationhigh'
 
 - interval: 1m
   input_series:
@@ -212,7 +212,7 @@ tests:
       exp_annotations:
         summary: "Node readiness status is flapping."
         description: 'The readiness status of node minikube has changed 10 times in the last 15 minutes.'
-        runbook_url: 'https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubenodereadinessflapping'
+        runbook_url: 'https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubenodereadinessflapping'
 
 # Verify that node:node_num_cpu:sum triggers no many-to-many errors.
 - interval: 1m
@@ -317,7 +317,7 @@ tests:
       exp_annotations:
         summary: "Pod has been in a non-ready state for more than 15 minutes."
         description: "Pod ns1/pod-ds-7cc77d965f-cgsdv has been in a non-ready state for longer than 15 minutes."
-        runbook_url: "https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubepodnotready"
+        runbook_url: "https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubepodnotready"
 
 - interval: 1m
   input_series:
@@ -450,7 +450,7 @@ tests:
       exp_annotations:
         summary: "DaemonSet rollout is stuck."
         description: 'DaemonSet monitoring/node-exporter has not finished or progressed for at least 15 minutes.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubedaemonsetrolloutstuck
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubedaemonsetrolloutstuck
   - eval_time: 34m
     alertname: KubeDaemonSetRolloutStuck
 - interval: 1m
@@ -480,7 +480,7 @@ tests:
       exp_annotations:
         summary: "DaemonSet rollout is stuck."
         description: 'DaemonSet monitoring/node-exporter has not finished or progressed for at least 15 minutes.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubedaemonsetrolloutstuck
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubedaemonsetrolloutstuck
   - eval_time: 34m
     alertname: KubeDaemonSetRolloutStuck
 - interval: 1m
@@ -510,7 +510,7 @@ tests:
       exp_annotations:
         summary: "DaemonSet rollout is stuck."
         description: 'DaemonSet monitoring/node-exporter has not finished or progressed for at least 15 minutes.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubedaemonsetrolloutstuck
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubedaemonsetrolloutstuck
   - eval_time: 34m
     alertname: KubeDaemonSetRolloutStuck
 - interval: 1m
@@ -540,7 +540,7 @@ tests:
       exp_annotations:
         summary: "DaemonSet rollout is stuck."
         description: 'DaemonSet monitoring/node-exporter has not finished or progressed for at least 15 minutes.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubedaemonsetrolloutstuck
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubedaemonsetrolloutstuck
   - eval_time: 36m
     alertname: KubeDaemonSetRolloutStuck
 
@@ -560,7 +560,7 @@ tests:
       exp_annotations:
         summary: "Kubelet client certificate is about to expire."
         description: 'Client certificate for Kubelet on node minikube expires in 1d 0h 0m 0s.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletclientcertificateexpiration
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletclientcertificateexpiration
   - eval_time: 1m
     alertname: KubeletClientCertificateExpiration
     exp_alerts:
@@ -572,7 +572,7 @@ tests:
       exp_annotations:
         summary: "Kubelet client certificate is about to expire."
         description: 'Client certificate for Kubelet on node minikube expires in 23h 59m 0s.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletclientcertificateexpiration
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletclientcertificateexpiration
     - exp_labels:
         job: kubelet
         namespace: monitoring
@@ -581,7 +581,7 @@ tests:
       exp_annotations:
         summary: "Kubelet client certificate is about to expire."
         description: 'Client certificate for Kubelet on node minikube expires in 23h 59m 0s.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletclientcertificateexpiration
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletclientcertificateexpiration
 
 - interval: 1m
   input_series:
@@ -599,7 +599,7 @@ tests:
       exp_annotations:
         summary: "Kubelet server certificate is about to expire."
         description: 'Server certificate for Kubelet on node minikube expires in 1d 0h 0m 0s.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletservercertificateexpiration
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletservercertificateexpiration
   - eval_time: 1m
     alertname: KubeletServerCertificateExpiration
     exp_alerts:
@@ -611,7 +611,7 @@ tests:
       exp_annotations:
         summary: "Kubelet server certificate is about to expire."
         description: 'Server certificate for Kubelet on node minikube expires in 23h 59m 0s.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletservercertificateexpiration
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletservercertificateexpiration
     - exp_labels:
         job: kubelet
         namespace: monitoring
@@ -620,7 +620,7 @@ tests:
       exp_annotations:
         summary: "Kubelet server certificate is about to expire."
         description: 'Server certificate for Kubelet on node minikube expires in 23h 59m 0s.'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletservercertificateexpiration
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletservercertificateexpiration
 
 - interval: 1m
   input_series:
@@ -638,7 +638,7 @@ tests:
       exp_annotations:
         summary: "Kubelet has failed to renew its client certificate."
         description: 'Kubelet on node minikube has failed to renew its client certificate (5 errors in the last 5 minutes).'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletclientcertificaterenewalerrors
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletclientcertificaterenewalerrors
 
 
 - interval: 1m
@@ -657,7 +657,7 @@ tests:
       exp_annotations:
         summary: "Kubelet has failed to renew its server certificate."
         description: 'Kubelet on node minikube has failed to renew its server certificate (5 errors in the last 5 minutes).'
-        runbook_url: https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletservercertificaterenewalerrors
+        runbook_url: https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeletservercertificaterenewalerrors
 
 - interval: 1m
   input_series:
@@ -677,7 +677,7 @@ tests:
       exp_annotations:
         summary: "Job failed to complete."
         description: "Job ns1/job-1597623120 failed to complete. Removing failed job after investigation should clear this alert."
-        runbook_url: "https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubejobfailed"
+        runbook_url: "https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubejobfailed"
 
 - interval: 1m
   input_series:
@@ -696,4 +696,4 @@ tests:
       exp_annotations:
         summary: "The apiserver has terminated 33.33% of its incoming requests."
         description: "The apiserver has terminated 33.33% of its incoming requests."
-        runbook_url: "https://github.com/kubernetes-monitoring/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeapiterminatedrequests"
+        runbook_url: "https://github.com/cyclops8456/kubernetes-mixin/tree/master/runbook.md#alert-name-kubeapiterminatedrequests"
